@@ -1,13 +1,20 @@
 # docker-integracion-continua
 
 
-Para levantar el entorno
+Clone del repo
+
+```
+git clone https://github.com/jorgepacheco/docker-integracion-continua
+```
+
+Para levantar el entorno:
+
 
 ```
 docker-compose up -d
 ```
 
-### URl's de Acceso
+### URL's de Acceso
 
 ```
 jenkins: http://ip-docker-machine:18080
