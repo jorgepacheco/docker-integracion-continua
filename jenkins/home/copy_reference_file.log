@@ -1,0 +1,31 @@
+--- Copying files at Fri Sep 16 08:26:51 UTC 2016
+/usr/share/jenkins/ref/plugins/chucknorris.jpi
+ /usr/share/jenkins/ref/plugins/chucknorris.jpi -> plugins/chucknorris.jpi
+copy plugins/chucknorris.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/promoted-builds.jpi
+ /usr/share/jenkins/ref/plugins/promoted-builds.jpi -> plugins/promoted-builds.jpi
+copy plugins/promoted-builds.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/junit.jpi
+ /usr/share/jenkins/ref/plugins/junit.jpi -> plugins/junit.jpi
+copy plugins/junit.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/jquery.jpi
+ /usr/share/jenkins/ref/plugins/jquery.jpi -> plugins/jquery.jpi
+copy plugins/jquery.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/m2release.jpi
+ /usr/share/jenkins/ref/plugins/m2release.jpi -> plugins/m2release.jpi
+copy plugins/m2release.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/cobertura.jpi
+ /usr/share/jenkins/ref/plugins/cobertura.jpi -> plugins/cobertura.jpi
+copy plugins/cobertura.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/greenballs.jpi
+ /usr/share/jenkins/ref/plugins/greenballs.jpi -> plugins/greenballs.jpi
+copy plugins/greenballs.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/ant.jpi
+ /usr/share/jenkins/ref/plugins/ant.jpi -> plugins/ant.jpi
+copy plugins/ant.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/plugins/sonar.jpi
+ /usr/share/jenkins/ref/plugins/sonar.jpi -> plugins/sonar.jpi
+copy plugins/sonar.jpi to JENKINS_HOME
+/usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
+ /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy -> init.groovy.d/tcp-slave-agent-port.groovy
+copy init.groovy.d/tcp-slave-agent-port.groovy to JENKINS_HOME

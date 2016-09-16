@@ -1,42 +1,40 @@
 version: '2'
 
-networks:
-  net-ci:
-    driver: bridge
-
 services:
   nexus:
-    container_name: nexus-server
     image: sonatype/nexus3
+    container_name: nexus
     ports:
       - "18081:8081"
     volumes_from:
       - nexus-data
     networks:
       - net-ci
-
   nexus-data:
     container_name: nexus-data
     image: sonatype/nexus:oss
     command: echo "data-only container for Nexus"
-
-  jenkins-data:
-    container_name: jenkins-data
-    image: jenkins
-    command: echo "data-only container for Jenkins"
-
   jenkins:
-    container_name: jenkins
     build: ./jenkins
+    container_name: jenkins
     #image: jenkins
+    links:
+      - nexus
+      - sonar
+    volumes:
+      - ./jenkins/home:/var/jenkins_home
     ports:
       - "18080:8080"
       - "50000:50000"
-    links:
-      - nexus
-    volumes:
-      - ./jenkins/config.xml:/var/jenkins_home/config.xml
-    volumes_from:
-      - jenkins-data
     networks:
       - net-ci
+  sonar:
+    image: sonarqube:5.6.1
+    container_name: sonar
+    ports:
+      - "19000:9000"
+    networks:
+      - net-ci
+networks:
+  net-ci:
+    driver: bridge
