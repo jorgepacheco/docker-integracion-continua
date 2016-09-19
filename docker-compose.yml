@@ -47,7 +47,7 @@ services:
       - net-ci
 
   sonar-plugins:
-    image: autentia.no-ip.org:5000/sonar-tnt-plugins
+    image: autentia.no-ip.org:5002/sonar-tnt-plugins
     command: /bin/true
 networks:
   net-ci:
