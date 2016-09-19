@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<jenkins.model.JenkinsLocationConfiguration>
-  <adminAddress>Dirección no configurada todavía &lt;nobody@nowhere&gt;</adminAddress>
-  <jenkinsUrl>http://192.168.99.100:18080/</jenkinsUrl>
-</jenkins.model.JenkinsLocationConfiguration>
